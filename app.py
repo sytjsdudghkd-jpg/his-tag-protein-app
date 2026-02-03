@@ -114,11 +114,11 @@ def page_protein_mw():
 
     with colA:
         raw = st.text_area(
-            "Protein sequence (FASTA 가능)",
-            height=240,
-            placeholder=">protein_name
-MHHHHHH...",
-        )
+    "Protein sequence (FASTA 가능)",
+    height=240,
+    placeholder=">protein_name\nMHHHHHH..."
+)
+
 
         c1, c2, c3 = st.columns(3)
         with c1:
@@ -571,4 +571,5 @@ elif page == "Ni-NTA Buffer (stock-based)":
 elif page == "SOP & Checklist":
     page_sop()
 elif page == "Virtual SDS-PAGE":
+
     page_virtual_sds()
